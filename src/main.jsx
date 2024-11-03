@@ -6,7 +6,11 @@ import { Layout } from "@/layout.jsx";
 
 createRoot(document.getElementById('root')).render(
 
-    <App />
- 
   
+      <Layout>
+    
+       <App />
+       </Layout>
+       
+
 )

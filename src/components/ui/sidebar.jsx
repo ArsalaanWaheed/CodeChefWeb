@@ -119,7 +119,7 @@ const SidebarProvider = React.forwardRef((
             }
           }
           className={cn(
-            "group/sidebar-wrapper flex min-h-svh w-full has-[[data-variant=inset]]:bg-sidebar",
+            "group/sidebar-wrapper  flex min-h-svh  w-full has-[[data-variant=inset]]:bg-sidebar",
             className
           )}
           ref={ref}
@@ -165,7 +165,7 @@ const Sidebar = React.forwardRef((
         <SheetContent
           data-sidebar="sidebar"
           data-mobile="true"
-          className="w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
+          className="w-[--sidebar-width]  bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
           style={
             {
               "--sidebar-width": SIDEBAR_WIDTH_MOBILE
@@ -413,7 +413,7 @@ const SidebarMenuItem = React.forwardRef(({ className, ...props }, ref) => (
   <li
     ref={ref}
     data-sidebar="menu-item"
-    className={cn("group/menu-item relative text-white", className)}
+    className={cn("group/menu-item relative  text-white", className)}
     {...props} />
 ))
 SidebarMenuItem.displayName = "SidebarMenuItem"

@@ -17,7 +17,7 @@ import navImg from "./navbar/navImg.jpg";
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/home",
     icon: Home,
   },
   {
@@ -37,7 +37,7 @@ const items = [
   },
   {
     title: "Leads",
-    url: "#",
+    url: "/leads",
     icon: Settings,
   },
   {
@@ -54,18 +54,18 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <Sidebar className="" >
+    <Sidebar className="">
       <SidebarContent className="active:border-none"style={{backgroundImage:`url(${navImg})`}} >
         <SidebarGroup className="">
           <SidebarGroupLabel>Application</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu className="">
               {items.map((item) => (
-                <SidebarMenuItem className="" key={item.title}>
-                  <SidebarMenuButton className="" asChild>
-                    <a className="h-16" href={item.url}>
+                <SidebarMenuItem className="focus:bg-black" key={item.title}>
+                  <SidebarMenuButton className="h-10 hover:text-black" asChild>
+                    <a className="h-16 " href={item.url}>
                       <item.icon />
-                      <span className=" h-[40px] text-white p-0 text-[2.2em]">{item.title}</span>
+                      <span className=" h-[40px] text-white  hover:text-black p-0 text-[2.2em]">{item.title}</span>
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

@@ -3,10 +3,10 @@ import { AppSidebar } from "@/AppSidebar"
 
 export  function Layout({ children }) {
   return (
-    <SidebarProvider>
+    <SidebarProvider className=" ">
       <AppSidebar className=" bg-black"/>
-      <main>
-        <SidebarTrigger className="fixed right-4 top-6  "/>
+      <main className="bg-black overflow-hidden ">
+        <SidebarTrigger className="fixed right-0 top-6  "/>
         {children}
       </main>
     </SidebarProvider>
